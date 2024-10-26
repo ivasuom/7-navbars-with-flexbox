@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: red;
+    margin-left: 10px;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.primary-btn:hover {
+    background-color: #c11119;
+}
+
+.nav-logo {
+    height: 50px;
+}
+
+@media (max-width: 959px) {
+    .nav-logo {
+        height: 30px;
+    }
+}
+
+.translate-ico {
+    filter: invert(1);
+    height: 18px;
+    position: absolute;
+    left: 15px;
+}
+
+.down-arrow-ico {
+    filter: invert(1);
+    height: 8px;
+    position: absolute;
+    right: 15px;
+}
+
+.nav,
+.nav-section,
+.select-wrapper,
+.select-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    justify-content: space-between;
+    padding: 30px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.select-wrapper {
+    box-sizing: border-box;
+    border: 1px solid #5f5f5f;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.select-item {
+    appearance: none;
+    background: none;
+    border: none;
+    color: white;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    padding-left: 37.5px;
+}
+
+.select-item:focus {
+    outline: 2px solid white;
+}
+
+.select-item > option {
+    color: black;
+}

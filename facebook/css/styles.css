@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eceef1;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-logo {
+    height: 40px;
+}
+
+.ico-sm {
+    height: 14px;
+}
+
+.ico-m {
+    height: 18px;
+}
+
+.ico-l {
+    height: 20px;
+}
+
+.profile-img-wrapper {
+    width: 40px;
+    height: 40px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.profile-ico-wrapper {
+    background-color: #e4e6eb;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    bottom: 0;
+    right: 0;
+}
+
+.profile-ico-wrapper > img {
+    height: 12px;
+}
+
+.nav {
+    background-color: white;
+    padding: 4px 12px;
+    border-bottom: 1px solid #e4e6eb;
+}
+
+.nav,
+.nav-section,
+.primary-ico-wrapper,
+.secondary-ico-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-section.left,
+.nav-section.right {
+    flex: 1 300px;
+}
+
+.nav-section.mid {
+    flex-basis: 570px;
+}
+
+.nav-section.right {
+    justify-content: flex-end;
+}
+
+.primary-ico-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 0 3px;
+}
+
+.primary-ico-wrapper.light {
+    background-color: #f0f2f5;
+}
+
+.primary-ico-wrapper.dark {
+    background-color: #e4e6eb;
+}
+
+.primary-ico-wrapper.dark:hover {
+    background-color: #d8dadf;
+}
+
+.nav-link {
+    margin: 0 7px;
+    flex-grow: 1;
+}
+
+.secondary-ico-wrapper {
+    justify-content: center;
+    border-radius: 10px;
+    padding: 14px 7px;
+}
+
+.secondary-ico-wrapper:not(.active):hover {
+    background-color: #f0f2f5;
+}
+
+.secondary-ico-wrapper.active {
+    position: relative;
+}
+
+.secondary-ico-wrapper.active::after {
+    content: '';
+    width: 100%;
+    border-bottom: 4px solid #0866ff;
+    position: absolute;
+    bottom: -4px;
+}
+
+@media (max-width: 699px) {
+    .nav-link {
+        display: none;
+    }
+}

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #101214;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.create-link {
+    color: #dbe4e9;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ico-sm,
+.ico-m {
+    filter: invert(1);
+}
+
+.ico-sm {
+    height: 16px;
+}
+
+.ico-m {
+    height: 20px;
+}
+
+.nav-logo {
+    height: 32px;
+}
+
+.profile-img {
+    height: 32px;
+}
+
+.home-link {
+    margin-left: 6px;
+}
+
+.nav-item.create-link > .ico-m {
+    margin-right: 7px;
+}
+
+.nav-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 0 2px;
+}
+
+.nav-item:hover {
+    background-color: #333d42;
+}
+
+.nav-item.create-link {
+    width: auto;
+    border-radius: 60px;
+    padding: 0 10px;
+}
+
+.search-form {
+    background-color: #2a3236;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.search-form:hover {
+    background-color: #333d42;
+}
+
+.search-label {
+    padding: 12px 15px;
+}
+
+.search-input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.search-input::placeholder {
+    color: #8ba2ad;
+}
+
+.nav,
+.nav-section,
+.nav-item,
+.home-link,
+.search-label {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    padding: 8px 6px;
+    background-color: #0e1113;
+    border-bottom: 1px solid #3e4142;
+}
+
+.nav-section.left {
+    flex-grow: 1;
+}
+
+.nav-section.mid {
+    flex-grow: 6;
+    justify-content: center;
+}
+
+.nav-section.right {
+    flex-grow: 0.75;
+    justify-content: flex-end;
+}
