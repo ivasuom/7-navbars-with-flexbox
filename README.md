@@ -1,1 +1,1 @@
-# Starter files - 7 Navbars with Flexbox
+# Solution files - 7 Navbars with Flexbox
